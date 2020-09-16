@@ -210,7 +210,7 @@ p {
   background-color: #ffffff;
   box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
   padding: 20px 20px;
-  color: #00f59e;
+  color: #00bfa6;
   size: 15px;
 }
 
@@ -229,4 +229,233 @@ p {
   letter-spacing: 0.5px;
   padding-top: 1px;
   padding-left: 120px;
+}
+.product {
+  width: 85%;
+  background-color: #ffffff;
+  /* box-shadow: 2px 2px 30px rgba(167, 158, 245, 0.2); */
+  display: flex;
+  margin: 30px auto;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  margin-top: -60px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.p-heading {
+  margin: 20px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.p-heading h3 {
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 2rem;
+  color: #00bfa6;
+}
+
+.p-heading h3 font {
+  color: #f50057;
+}
+
+.product-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px 0px;
+  width: 100%;
+}
+
+.box {
+  width: 250px;
+  height: 330px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 4px;
+  position: relative;
+  margin: 10px 30px;
+}
+.box img {
+  height: 180px;
+}
+
+.box p {
+  color: #f50057;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+.price {
+  color: #2c2c2c;
+  font-size: 1rem;
+}
+
+.buy-btn {
+  position: absolute;
+  width: 140px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  bottom: -20px;
+  transform: translateX(-50%);
+  border-radius: 20px;
+  color: #ffffff;
+  background-color: #00bfa6;
+  display: none;
+  font-size: 0.8rem;
+  animation: fade 0.2s;
+}
+
+.box:hover {
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.box:hover .price {
+  color: #00bfa6;
+  transition: all ease 0.2s;
+}
+
+.box:hover .buy-btn {
+  display: flex;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+footer h3 {
+  font-size: 2.5rem;
+  color: #00bfa6;
+  margin: 0px;
+}
+.social-footer {
+  display: none;
+  box-shadow: 2px 5px 30px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 40px;
+}
+.social-footer li a {
+  padding: 5px 20px;
+  margin: 10px;
+  display: flex;
+  color: #00bfa6;
+}
+.social-footer li a:hover .fa-book {
+  color: #00acee;
+  transition: all 0.5s ease;
+}
+
+.social-footer li a:hover .fa-blogger-b {
+  color: #833ab4;
+  transition: all 0.5s ease;
+}
+.social-footer li a:hover .fa-user {
+  color: #f50057;
+  transition: all 0.5s ease;
+}
+.copyright {
+  color: #333333;
+  background-color: #00bfa6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+@media (max-width: 1230px) {
+  .main-img img {
+    height: 350px;
+  }
+  .main-text h1,
+  h2 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 1045px) {
+  .main {
+    background-size: 600px;
+  }
+  .main-img {
+    display: none;
+  }
+  .main-text {
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%, -50%);
+  }
+}
+@media (max-width: 600px) {
+  .social {
+    display: none;
+  }
+  .services {
+    display: none;
+  }
+  .stat {
+    display: none;
+  }
+  .logo {
+    left: 30px;
+    top: 30px;
+  }
+  .logo a {
+    font-size: 1.4rem;
+  }
+  .main-text {
+    overflow-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .main-text h1,
+  h2 {
+    font-size: 16px;
+    /* letter-spacing: 10px; */
+    /* margin: 0px 20px; */
+    line-height: 20px;
+  }
+  .main-text h2 {
+    font-size: 16px;
+  }
+  .main-btn {
+    margin: 0px 20px;
+  }
+  .product {
+    width: 88%;
+  }
+  .box {
+    margin: 20px 10px;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .social-footer {
+    display: flex;
+  }
 }
